@@ -1,0 +1,60 @@
+!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alasql@0.4"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+<script src="main.js"></script>
+
+</head>
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+          <div class="inner">
+            <h3 class="masthead-brand">Test</h3>
+            <nav class="nav nav-masthead justify-content-center">
+              <a class="nav-link active" href="#">Home</a>
+            </nav>
+          </div>
+        </header>
+  
+        <main role="main" class="inner cover container">
+          <form class="box-custom">
+            <div class="form-group">
+              <input id="readfile" class="form-control-file" type="file" onchange="loadFile(event)"  accept=".csv"/>
+            </div>
+            <div class="form-group">
+              <input id="readfile2" class="form-control-file" type="file" onchange="loadFile2(event)"  accept=".csv"/>
+            </div>
+          </form>
+
+            <p class="test1"> I would like to &nbsp;<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown button
+            </button></p>
+
+            <input class="btn btn-light" type="submit" value="Go" onClick="query1()">
+
+            <xmp id="output"></xmp>
+        </main>
+  
+        <footer class="mastfoot mt-auto">
+          <div class="inner">
+            <p><a href="https://getbootstrap.com/">UCMT Tool</a></p>
+          </div>
+        </footer>
+      </div>
+  
+            
+</body>
+</html>
